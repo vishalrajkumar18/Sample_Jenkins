@@ -1,0 +1,30 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Checkout') {
+            steps {
+                echo 'GitHub Repository Connected'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo 'Application Building'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Application Testing'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Application Deploying'
+            }
+        }
+    }
+}
